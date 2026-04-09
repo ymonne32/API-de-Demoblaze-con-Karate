@@ -1,0 +1,15 @@
+CONCLUSIONES Y HALLAZGOS - EJERCICIO 2
+
+1. El servicio signup permite crear usuarios nuevos y responde HTTP 200 con cuerpo vacio JSON ({}).
+
+2. Cuando se intenta registrar un usuario ya existente, el servicio responde HTTP 200 con un mensaje de negocio en el campo errorMessage: "This user already exist.".
+
+3. El servicio login con credenciales correctas responde HTTP 200 con un string que contiene el prefijo "Auth_token:", validando autenticacion exitosa.
+
+4. El servicio login con password incorrecto responde HTTP 200 con errorMessage: "Wrong password.".
+
+5. La API prioriza codigos HTTP 200 y comunica errores de negocio dentro del cuerpo de la respuesta. Esto exige validaciones adicionales sobre payload en las pruebas automatizadas.
+
+6. Se implementaron pruebas automatizadas reproducibles en Karate, con evidencias en reportes HTML, JSON y XML generados por Maven/Karate.
+
+7. El proyecto utiliza JavaScript dentro de Karate para construir datos de prueba dinamicos (usuarios unicos) y mejorar la mantenibilidad de los escenarios.
