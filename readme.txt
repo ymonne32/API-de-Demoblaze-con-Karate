@@ -43,12 +43,4 @@ Paso 2. Ejecutar:
 Cada escenario imprime en consola la entrada enviada y la salida recibida usando sentencias print de Karate.
 Estas trazas tambien quedan reflejadas en el reporte HTML.
 
-8) Publicar en GitHub (repositorio publico)
-Paso 1. Crear repositorio publico en GitHub.
-Paso 2. En la raiz del proyecto ejecutar:
-        git init
-        git add .
-        git commit -m "Ejercicio 2 - pruebas API Demoblaze con Karate"
-        git branch -M main
-        git remote add origin <URL_REPOSITORIO_PUBLICO>
-        git push -u origin main
+
